@@ -4,6 +4,7 @@
   --wb-white:  #FFFFFF;
   --wb-orange: #FF5E00;
   --wb-black:  #000000;
+  --wb-cyan:   #8CF3FF;
 }
 
 /* Topaz-Webfont. Datei nach static/fonts/ legen (siehe static/fonts/README.md).
@@ -93,7 +94,31 @@ body {
   line-height: 1.1;
   white-space: pre;
   overflow-x: auto;
+  position: relative;
 }
+
+/* Seltener Glitch (siehe js/glitch.js): Anaglyphen-Versatz ±3 px,
+   dazu zwei verrutschte Streifen. Nur Schatten/Overlay, kein Text ändert sich. */
+.ascii.glitch { text-shadow: -3px 0 var(--wb-cyan), 3px 0 var(--wb-orange); }
+.ascii.glitch::before,
+.ascii.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+.ascii.glitch::before {
+  color: var(--wb-cyan);
+  clip-path: inset(var(--a-top) 0 var(--a-bottom) 0);
+  transform: translateX(var(--a-x));
+}
+.ascii.glitch::after {
+  color: var(--wb-orange);
+  clip-path: inset(var(--b-top) 0 var(--b-bottom) 0);
+  transform: translateX(var(--b-x));
+}
+.window.glitch { box-shadow: -3px 0 0 var(--wb-cyan), 3px 0 0 var(--wb-orange); }
 
 .cli p { margin: 0.15rem 0; }
 
@@ -145,4 +170,7 @@ a:focus-visible { outline: 2px solid var(--wb-white); outline-offset: 2px; }
 
 @media (prefers-reduced-motion: reduce) {
   .cursor { animation: none; }
+  .ascii.glitch { text-shadow: none; }
+  .ascii.glitch::before, .ascii.glitch::after { content: none; }
+  .window.glitch { box-shadow: none; }
 }
