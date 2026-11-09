@@ -1,7 +1,7 @@
 # Amiga-CLI-Visitenkarte – Hugo-Konfiguration
 # Minimal gehalten: kein Theme, eigene Layouts in /layouts.
 
-baseURL = "https://example.com/"
+baseURL = "https://dirk-ruehaak.net/"
 title = "Dirk Rühaak"
 defaultContentLanguage = "de"
 enableRobotsTXT = true

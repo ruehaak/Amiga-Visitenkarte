@@ -46,7 +46,7 @@ static/
 4. ~~ASCII-Banner~~ erledigt („DÖRK“, optional via patorjk.com/software/taag ersetzbar).
 5. **Impressum & Datenschutz**: Impressum ausgefüllt; in `datenschutz.md` fehlt
    noch der Hosting-Anbieter (`[ ]`). Hosting-Angaben prüfen. (Beides sind Vorlagen, keine Rechtsberatung.)
-6. `baseURL` in `hugo.toml` auf die echte Domain setzen.
+6. ~~`baseURL`~~ erledigt: https://dirk-ruehaak.net/
 7. ~~404-Seite~~ erledigt.
 
 ## Lokal starten
