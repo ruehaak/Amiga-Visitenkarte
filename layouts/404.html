@@ -1,0 +1,8 @@
+{{ define "main" }}
+  <div class="cli">
+    <p class="prompt">1&gt; TYPE {{ "seite.txt" }}</p>
+    <p>Error: Object not found.</p>
+    <p>Fehler 404 – diese Seite gibt es nicht.</p>
+    <p class="prompt">1&gt; <a href="{{ "/" | relURL }}">CD /</a></p>
+  </div>
+{{ end }}
