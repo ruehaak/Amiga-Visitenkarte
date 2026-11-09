@@ -39,14 +39,14 @@ static/
 ## Offene Aufgaben (TODO)
 1. **Topaz-Font** nach `static/fonts/Topaz-a500.woff2` legen (Anleitung in
    `static/fonts/README.md`). Ohne Datei greift die Monospace-Ersatzschrift.
-2. **Berufsbezeichnung** in `hugo.toml` prüfen/ersetzen (`role`).
+2. ~~Berufsbezeichnung~~ erledigt: „Agile Digital Innovator“ (`role`) plus
+   CLI-Zeile `tagline` in `hugo.toml`.
 3. **Interessen** in `hugo.toml` kuratieren.
-4. **ASCII-Banner** in `layouts/index.html` ersetzen (aktuell Platzhalter
-   „DORK“). Vorschlag: patorjk.com/software/taag.
+4. ~~ASCII-Banner~~ erledigt („DÖRK“, optional via patorjk.com/software/taag ersetzbar).
 5. **Impressum & Datenschutz**: Platzhalter `[ ]` ausfüllen; Impressumspflicht
    und Hosting-Angaben prüfen. (Beides sind Vorlagen, keine Rechtsberatung.)
 6. `baseURL` in `hugo.toml` auf die echte Domain setzen.
-7. Optional: eigene `layouts/404.html`.
+7. ~~404-Seite~~ erledigt.
 
 ## Lokal starten
 ```

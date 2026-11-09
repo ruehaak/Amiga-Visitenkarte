@@ -12,6 +12,7 @@
     name: d.name || "",
     role: d.role || "",
     location: d.location || "",
+    tagline: d.tagline || "",
     interests: (d.interests || "").split("|").filter(Boolean)
   };
 
@@ -26,9 +27,10 @@
     { kind: "type", text: "TYPE profil.txt" },
     { kind: "out",  text: "Name  : " + data.name },
     { kind: "out",  text: "Beruf : " + data.role },
-    { kind: "out",  text: "Ort   : " + data.location },
-    { kind: "type", text: "LIST interessen/" }
+    { kind: "out",  text: "Ort   : " + data.location }
   ];
+  if (data.tagline) lines.push({ kind: "type", text: data.tagline });
+  lines.push({ kind: "type", text: "LIST interessen/" });
   data.interests.forEach(function (item) {
     lines.push({ kind: "out", text: "  " + item });
   });

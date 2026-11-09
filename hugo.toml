@@ -9,7 +9,9 @@ enableRobotsTXT = true
 [params]
   # --- Diese Werte erscheinen auf der Startseite. Nur hier anpassen. ---
   name     = "Dörk"
-  role     = "Agile Coach & Product Owner"   # TODO: Berufsbezeichnung prüfen/ersetzen
+  role     = "Agile Digital Innovator"
+  # Augenzwinkernde CLI-Zeile nach dem Profil. Leer lassen = keine Zeile.
+  tagline  = "run transformation --agile --creative"
   location = "München"
 
   # Interessen für die "LIST interessen/"-Ausgabe. Frei kürzen/ergänzen.
