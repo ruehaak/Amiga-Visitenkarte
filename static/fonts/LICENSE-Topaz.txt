@@ -1,0 +1,8 @@
+Topaz-a500.woff2 ist aus Topaz_a500_v1.0.ttf konvertiert
+(https://github.com/rewtnull/amigafonts, Ordner ttf/).
+
+Topaz is (c) Amiga Inc.
+ttf-Version (c) dMG/t!s^dS!, veroeffentlicht unter der GPL-FE-Lizenz:
+http://www.gnu.org/licenses/gpl-faq.html#FontException
+
+Hinweis: Das Euro-Zeichen fehlt im Font; Umlaute und ss sind vorhanden.
