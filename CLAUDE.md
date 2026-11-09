@@ -44,8 +44,8 @@ static/
 3. **Interessen** (`scope`) in `hugo.toml` kuratieren.
 3a. ~~LinkedIn-URL~~ erledigt (`net` in `hugo.toml`).
 4. ~~ASCII-Banner~~ erledigt („DÖRK“, optional via patorjk.com/software/taag ersetzbar).
-5. **Impressum & Datenschutz**: Impressum ausgefüllt; in `datenschutz.md` fehlt
-   noch der Hosting-Anbieter (`[ ]`). Hosting-Angaben prüfen. (Beides sind Vorlagen, keine Rechtsberatung.)
+5. ~~Impressum & Datenschutz~~ erledigt (Hosting: ALL-INKL.COM). Bei neuen
+   Diensten (Analytics, Formulare, externe Fonts) `datenschutz.md` anpassen. (Beides sind Vorlagen, keine Rechtsberatung.)
 6. ~~`baseURL`~~ erledigt: https://dirk-ruehaak.net/
 7. ~~404-Seite~~ erledigt.
 

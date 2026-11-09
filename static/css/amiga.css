@@ -156,6 +156,7 @@ a:focus-visible { outline: 2px solid var(--wb-white); outline-offset: 2px; }
 .legal { margin-top: 0.15rem; }
 .nfo-head { margin: 0.5rem 0; color: var(--wb-orange); font-family: inherit; line-height: 1.1; overflow-x: auto; }
 .nfo-body p { margin: 0.5rem 0; }
+.nfo-body ul, .doc ul { margin: 0.5rem 0; padding-left: 1.5rem; }
 .nfo-body strong { color: var(--wb-orange); font-weight: normal; }
 .cd { display: inline-block; padding: 0.4rem 0.2rem; }
 
