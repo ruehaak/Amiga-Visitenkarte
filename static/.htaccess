@@ -1,0 +1,2 @@
+# Apache (ALL-INKL): eigene 404-Seite aus layouts/404.html
+ErrorDocument 404 /404.html

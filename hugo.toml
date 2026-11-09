@@ -5,6 +5,8 @@ baseURL = "https://dirk-ruehaak.net/"
 title = "Dirk Rühaak"
 defaultContentLanguage = "de"
 enableRobotsTXT = true
+# Keine Taxonomie-Seiten (Tags/Kategorien) und kein RSS: gibt es hier nicht.
+disableKinds = ["taxonomy", "term", "RSS"]
 
 [params]
   # --- Diese Werte erscheinen auf der Startseite. Nur hier anpassen. ---
