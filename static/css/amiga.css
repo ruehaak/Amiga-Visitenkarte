@@ -2,7 +2,7 @@
 :root {
   --wb-blue:   #0055AA;
   --wb-white:  #FFFFFF;
-  --wb-orange: #FF8A00;
+  --wb-orange: #FF5E00;
   --wb-black:  #000000;
 }
 
@@ -76,6 +76,14 @@ a:focus-visible { outline: 2px solid var(--wb-white); outline-offset: 2px; }
   border-top: 2px solid var(--wb-white);
   font-size: 0.85em;
 }
+
+/* Menüpunkt "Rechtliches" */
+.menu summary { cursor: pointer; color: var(--wb-orange); }
+.menu .hint { color: var(--wb-white); opacity: 0.7; }
+.menu ul { list-style: none; margin: 0.5rem 0 0; padding: 0.5rem 1rem; background: var(--wb-white); display: inline-block; }
+.menu li a { display: block; padding: 0.1rem 0; color: var(--wb-blue); }
+.menu li a:focus-visible { outline: none; background: var(--wb-orange); color: var(--wb-white); }
+.menu li a:hover { background: var(--wb-orange); color: var(--wb-white); }
 
 .doc { max-width: 70ch; }
 .doc h1 {

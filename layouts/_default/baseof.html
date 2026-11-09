@@ -13,9 +13,16 @@
   </main>
 
   <footer class="footer">
-    <a href="{{ "/impressum/" | relURL }}">Impressum</a>
-    <span aria-hidden="true"> | </span>
-    <a href="{{ "/datenschutz/" | relURL }}">Datenschutz</a>
+    {{/* Ein Menüpunkt wie in der Workbench-Menüleiste. Ohne JS: anklicken.
+         Mit JS zusätzlich: Alt oder Ctrl drücken. */}}
+    <details class="menu" id="menu">
+      <summary>Rechtliches <span class="hint">(Alt / Ctrl)</span></summary>
+      <ul>
+        <li><a href="{{ "/impressum/" | relURL }}">Impressum</a></li>
+        <li><a href="{{ "/datenschutz/" | relURL }}">Datenschutz</a></li>
+      </ul>
+    </details>
   </footer>
+  <script src="{{ "js/menu.js" | relURL }}" defer></script>
 </body>
 </html>
