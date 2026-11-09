@@ -42,7 +42,7 @@ static/
 2. ~~Berufsbezeichnung~~ erledigt: „Agile Digital Innovator“ (`role`) plus
    CLI-Zeile `tagline` in `hugo.toml`.
 3. **Interessen** (`scope`) in `hugo.toml` kuratieren.
-3a. **LinkedIn-URL** (`net`) in `hugo.toml` eintragen (aktuell Platzhalter).
+3a. ~~LinkedIn-URL~~ erledigt (`net` in `hugo.toml`).
 4. ~~ASCII-Banner~~ erledigt („DÖRK“, optional via patorjk.com/software/taag ersetzbar).
 5. **Impressum & Datenschutz**: Platzhalter `[ ]` ausfüllen; Impressumspflicht
    und Hosting-Angaben prüfen. (Beides sind Vorlagen, keine Rechtsberatung.)

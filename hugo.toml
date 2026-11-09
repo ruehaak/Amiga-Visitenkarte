@@ -14,7 +14,7 @@ enableRobotsTXT = true
   tagline  = "RUN transformation MODE=AGILE STYLE=CREATIVE"
   taglineReply = "[CLI 2]"   # AmigaDOS-Antwort auf RUN; leer = keine Antwort
   location = "München"   # "Where"
-  net      = "linkedin.com/in/DEIN-PROFIL"   # TODO: echte LinkedIn-URL (ohne https://)
+  net      = "www.linkedin.com/in/dirkruehaak"   # LinkedIn, ohne https://
 
   # Greater scope für die "DIR greater_scope"-Ausgabe. Frei kürzen/ergänzen.
   scope = [
