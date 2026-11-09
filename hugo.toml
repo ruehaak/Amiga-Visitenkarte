@@ -9,7 +9,7 @@ enableRobotsTXT = true
 [params]
   # --- Diese Werte erscheinen auf der Startseite. Nur hier anpassen. ---
   name     = "Dirk Rühaak"
-  domain   = "Innovation & Transformation – Agile & Digital"
+  domain   = "Innovation, Transformation, Agile, Digital"
   # Augenzwinkernde CLI-Zeile nach dem Profil. Leer lassen = keine Zeile.
   tagline  = "RUN transformation MODE=AGILE STYLE=CREATIVE"
   taglineReply = "[CLI 2]"   # AmigaDOS-Antwort auf RUN; leer = keine Antwort
@@ -22,7 +22,9 @@ enableRobotsTXT = true
     "Nick Cave",
     "FoodHub München",
     "Literature",
-    "Theories etc.",
+    "Ashtanga",
+    "Theories",
+    "etc.",
   ]
 
   # Tipp-Geschwindigkeit in Millisekunden pro Zeichen. 0 = Animation aus.
