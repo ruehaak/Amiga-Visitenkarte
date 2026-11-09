@@ -31,12 +31,48 @@ body {
   padding: env(safe-area-inset-top, 0) 1rem env(safe-area-inset-bottom, 0);
 }
 
+/* CLI-Fenster mit Titelleiste und Tiefengadgets (rein dekorativ) */
+.window {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: calc(70ch + 2rem);
+  margin: 1rem auto 0;
+  border: 2px solid var(--wb-white);
+}
+
+.titlebar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.15rem 0.4rem;
+  background: var(--wb-white);
+  color: var(--wb-blue);
+}
+
+.gadgets { display: flex; gap: 0.3rem; }
+.gadgets i {
+  position: relative;
+  display: block;
+  width: 1.1em;
+  height: 0.9em;
+  border: 2px solid var(--wb-blue);
+}
+.gadgets i::after {
+  content: "";
+  position: absolute;
+  width: 55%;
+  height: 55%;
+  border: 2px solid var(--wb-blue);
+}
+.g-back::after  { top: -2px; left: -2px; }
+.g-front::after { right: -2px; bottom: -2px; background: var(--wb-blue); }
+
 .screen {
   flex: 1 0 auto;
   width: 100%;
-  max-width: 70ch;
-  margin: 0 auto;
-  padding: 1.5rem 0;
+  padding: 1.5rem 1rem;
 }
 
 .ascii {
@@ -70,8 +106,8 @@ a:focus-visible { outline: 2px solid var(--wb-white); outline-offset: 2px; }
 .footer {
   flex-shrink: 0;
   width: 100%;
-  max-width: 70ch;
-  margin: 2rem auto 0;
+  max-width: calc(70ch + 2rem);
+  margin: 1rem auto 0;
   padding-top: 1rem;
   border-top: 2px solid var(--wb-white);
   font-size: 0.85em;

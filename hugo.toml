@@ -9,12 +9,13 @@ enableRobotsTXT = true
 [params]
   # --- Diese Werte erscheinen auf der Startseite. Nur hier anpassen. ---
   name     = "Dirk Rühaak"
-  domain   = "Agile Digital Innovation"
+  domain   = "Innovation & Transformation – Agile & Digital"
   # Augenzwinkernde CLI-Zeile nach dem Profil. Leer lassen = keine Zeile.
-  tagline  = "run transformation --agile --creative"
+  tagline  = "RUN transformation MODE=AGILE STYLE=CREATIVE"
+  taglineReply = "[CLI 2]"   # AmigaDOS-Antwort auf RUN; leer = keine Antwort
   location = "München"   # "Where"
 
-  # Greater scope für die "LIST greater_scope/"-Ausgabe. Frei kürzen/ergänzen.
+  # Greater scope für die "DIR greater_scope/"-Ausgabe. Frei kürzen/ergänzen.
   scope = [
     "Cats",
     "Nick Cave",

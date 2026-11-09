@@ -8,9 +8,15 @@
   <link rel="stylesheet" href="{{ "css/amiga.css" | relURL }}">
 </head>
 <body>
-  <main class="screen">
-    {{ block "main" . }}{{ end }}
-  </main>
+  <div class="window">
+    <div class="titlebar" aria-hidden="true">
+      <span class="title">DearKeyDOS</span>
+      <span class="gadgets"><i class="g-back"></i><i class="g-front"></i></span>
+    </div>
+    <main class="screen">
+      {{ block "main" . }}{{ end }}
+    </main>
+  </div>
 
   <footer class="footer">
     {{/* Ein Menüpunkt wie in der Workbench-Menüleiste. Ohne JS: anklicken.

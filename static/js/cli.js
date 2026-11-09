@@ -13,6 +13,7 @@
     domain: d.domain || "",
     location: d.location || "",
     tagline: d.tagline || "",
+    taglineReply: d.taglineReply || "",
     scope: (d.scope || "").split("|").filter(Boolean)
   };
 
@@ -29,8 +30,11 @@
     { kind: "out",  text: "Domain: " + data.domain },
     { kind: "out",  text: "Where : " + data.location }
   ];
-  if (data.tagline) lines.push({ kind: "type", text: data.tagline });
-  lines.push({ kind: "type", text: "LIST greater_scope/" });
+  if (data.tagline) {
+    lines.push({ kind: "type", text: data.tagline });
+    if (data.taglineReply) lines.push({ kind: "out", text: data.taglineReply });
+  }
+  lines.push({ kind: "type", text: "DIR greater_scope/" });
   data.scope.forEach(function (item) {
     lines.push({ kind: "out", text: "  " + item });
   });
