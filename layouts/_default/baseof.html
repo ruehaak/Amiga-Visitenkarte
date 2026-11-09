@@ -10,25 +10,20 @@
 <body>
   <div class="window">
     <div class="titlebar" aria-hidden="true">
+      <i class="g-close"></i>
       <span class="title">DearKeyDOS</span>
       <span class="gadgets"><i class="g-back"></i><i class="g-front"></i></span>
     </div>
     <main class="screen">
       {{ block "main" . }}{{ end }}
     </main>
+    <div class="sizebar" aria-hidden="true"><i class="g-size"></i></div>
   </div>
 
   <footer class="footer">
-    {{/* Ein Menüpunkt wie in der Workbench-Menüleiste. Ohne JS: anklicken.
-         Mit JS zusätzlich: Alt oder Ctrl drücken. */}}
-    <details class="menu" id="menu">
-      <summary>Rechtliches <span class="hint">(Alt / Ctrl)</span></summary>
-      <ul>
-        <li><a href="{{ "/impressum/" | relURL }}">Impressum</a></li>
-        <li><a href="{{ "/datenschutz/" | relURL }}">Datenschutz</a></li>
-      </ul>
-    </details>
+    <a href="{{ "/impressum/" | relURL }}" data-legal="impressum">Impressum</a>
+    <span aria-hidden="true">|</span>
+    <a href="{{ "/datenschutz/" | relURL }}" data-legal="datenschutz">Datenschutz</a>
   </footer>
-  <script src="{{ "js/menu.js" | relURL }}" defer></script>
 </body>
 </html>

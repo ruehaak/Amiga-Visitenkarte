@@ -45,29 +45,39 @@ body {
 .titlebar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 0.6rem;
   padding: 0.15rem 0.4rem;
   background: var(--wb-white);
   color: var(--wb-blue);
 }
+.title { flex: 1; }
 
 .gadgets { display: flex; gap: 0.3rem; }
-.gadgets i {
+.window i {
   position: relative;
   display: block;
   width: 1.1em;
   height: 0.9em;
   border: 2px solid var(--wb-blue);
 }
-.gadgets i::after {
+.window i::after {
   content: "";
   position: absolute;
   width: 55%;
   height: 55%;
   border: 2px solid var(--wb-blue);
 }
+.g-close::after { top: 25%; left: 25%; width: 50%; height: 50%; }
 .g-back::after  { top: -2px; left: -2px; }
 .g-front::after { right: -2px; bottom: -2px; background: var(--wb-blue); }
+.g-size::after  { right: -2px; bottom: -2px; }
+
+.sizebar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.15rem 0.4rem;
+  background: var(--wb-white);
+}
 
 .screen {
   flex: 1 0 auto;
@@ -104,22 +114,25 @@ a { color: var(--wb-orange); }
 a:focus-visible { outline: 2px solid var(--wb-white); outline-offset: 2px; }
 
 .footer {
+  position: sticky;
+  bottom: 0;
   flex-shrink: 0;
   width: 100%;
   max-width: calc(70ch + 2rem);
-  margin: 1rem auto 0;
-  padding-top: 1rem;
-  border-top: 2px solid var(--wb-white);
+  margin: 0 auto;
+  padding: 0.4rem 0 calc(0.4rem + env(safe-area-inset-bottom, 0));
+  background: var(--wb-blue);
+  text-align: center;
   font-size: 0.85em;
 }
+.footer a { display: inline-block; padding: 0.5rem 0.8rem; }
 
-/* Menüpunkt "Rechtliches" */
-.menu summary { cursor: pointer; color: var(--wb-orange); }
-.menu .hint { color: var(--wb-white); opacity: 0.7; }
-.menu ul { list-style: none; margin: 0.5rem 0 0; padding: 0.5rem 1rem; background: var(--wb-white); display: inline-block; }
-.menu li a { display: block; padding: 0.1rem 0; color: var(--wb-blue); }
-.menu li a:focus-visible { outline: none; background: var(--wb-orange); color: var(--wb-white); }
-.menu li a:hover { background: var(--wb-orange); color: var(--wb-white); }
+/* Rechtstexte im Terminal (von cli.js eingefügt) */
+.legal { margin-top: 0.15rem; }
+.nfo-head { margin: 0.5rem 0; color: var(--wb-orange); font-family: inherit; line-height: 1.1; overflow-x: auto; }
+.nfo-body p { margin: 0.5rem 0; }
+.nfo-body strong { color: var(--wb-orange); font-weight: normal; }
+.cd { display: inline-block; padding: 0.4rem 0.2rem; }
 
 .doc { max-width: 70ch; }
 .doc h1 {

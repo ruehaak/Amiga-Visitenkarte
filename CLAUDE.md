@@ -25,7 +25,7 @@ layouts/
   index.html               Startseite: Banner, CLI, noscript-Fallback
 static/
   css/amiga.css            Look (Farben, Topaz, Cursor)
-  js/cli.js                Tipp-Animation
+  js/cli.js                Tipp-Animation, Rechtstexte im Terminal (Klick auf Footer-Links)
   fonts/                   Topaz-Webfont hier ablegen (siehe fonts/README.md)
 ```
 
@@ -41,7 +41,8 @@ static/
    `static/fonts/README.md`). Ohne Datei greift die Monospace-Ersatzschrift.
 2. ~~Berufsbezeichnung~~ erledigt: „Agile Digital Innovator“ (`role`) plus
    CLI-Zeile `tagline` in `hugo.toml`.
-3. **Interessen** in `hugo.toml` kuratieren.
+3. **Interessen** (`scope`) in `hugo.toml` kuratieren.
+3a. **LinkedIn-URL** (`net`) in `hugo.toml` eintragen (aktuell Platzhalter).
 4. ~~ASCII-Banner~~ erledigt („DÖRK“, optional via patorjk.com/software/taag ersetzbar).
 5. **Impressum & Datenschutz**: Platzhalter `[ ]` ausfüllen; Impressumspflicht
    und Hosting-Angaben prüfen. (Beides sind Vorlagen, keine Rechtsberatung.)

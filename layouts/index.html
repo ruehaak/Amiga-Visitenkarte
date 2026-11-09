@@ -20,6 +20,7 @@
        data-name="{{ site.Params.name }}"
        data-domain="{{ site.Params.domain }}"
        data-location="{{ site.Params.location }}"
+       data-net="{{ site.Params.net }}"
        data-tagline="{{ site.Params.tagline }}"
        data-tagline-reply="{{ site.Params.taglineReply }}"
        data-scope="{{ delimit site.Params.scope "|" }}"
@@ -32,11 +33,20 @@
       <p>Name  : {{ site.Params.name }}</p>
       <p>Domain: {{ site.Params.domain }}</p>
       <p>Where : {{ site.Params.location }}</p>
+      {{ with site.Params.net }}<p>Net   : <a href="https://{{ . }}" rel="noopener">{{ . }}</a></p>{{ end }}
       {{ with site.Params.tagline }}<p class="prompt">1&gt; {{ . }}</p>{{ with site.Params.taglineReply }}<p>{{ . }}</p>{{ end }}{{ end }}
-      <p class="prompt">1&gt; DIR greater_scope/</p>
-      {{ range site.Params.scope }}<p>  {{ . }}</p>{{ end }}
+      <p class="prompt">1&gt; DIR greater_scope</p>
+      {{ range site.Params.scope }}<p>  {{ . }} (dir)</p>{{ end }}
     </div>
   </noscript>
+
+  {{/* Rechtstexte aus content/. cli.js zeigt sie per Klick im Terminal;
+       ohne JS führen die Footer-Links auf die eigenen Seiten. */}}
+  {{ range slice "impressum" "datenschutz" }}
+    {{ with site.GetPage (printf "/%s" .) }}
+      <template id="legal-{{ .File.ContentBaseName }}" data-title="{{ .Title }}">{{ .Content }}</template>
+    {{ end }}
+  {{ end }}
 
   <script src="{{ "js/cli.js" | relURL }}" defer></script>
 {{ end }}
