@@ -44,8 +44,8 @@ static/
 3. **Interessen** (`scope`) in `hugo.toml` kuratieren.
 3a. ~~LinkedIn-URL~~ erledigt (`net` in `hugo.toml`).
 4. ~~ASCII-Banner~~ erledigt („DÖRK“, optional via patorjk.com/software/taag ersetzbar).
-5. **Impressum & Datenschutz**: Platzhalter `[ ]` ausfüllen; Impressumspflicht
-   und Hosting-Angaben prüfen. (Beides sind Vorlagen, keine Rechtsberatung.)
+5. **Impressum & Datenschutz**: Impressum ausgefüllt; in `datenschutz.md` fehlt
+   noch der Hosting-Anbieter (`[ ]`). Hosting-Angaben prüfen. (Beides sind Vorlagen, keine Rechtsberatung.)
 6. `baseURL` in `hugo.toml` auf die echte Domain setzen.
 7. ~~404-Seite~~ erledigt.
 

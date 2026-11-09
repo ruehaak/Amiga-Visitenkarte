@@ -3,18 +3,22 @@ title: "Impressum"
 ---
 
 <!--
-  VORLAGE – keine Rechtsberatung. Platzhalter in [ ] ausfüllen und prüfen,
-  ob für dich eine Impressumspflicht besteht (bei beruflicher Nutzung i. d. R. ja).
+  Angaben ausgefüllt. Keine Rechtsberatung – Impressumspflicht bei
+  beruflicher Nutzung i. d. R. gegeben.
 -->
 
 Angaben gemäß § 5 DDG
 
-[VOLLER NAME]  
-[STRASSE UND HAUSNUMMER]  
-[PLZ ORT]
+Dirk Rühaak  
+c/o Werneburg Internet Marketing und Publikations-Service  
+Philipp-Kühner-Straße 2  
+99817 Eisenach
 
 **Kontakt**  
-E-Mail: [E-MAIL-ADRESSE]
+E-Mail: info@dirk-ruehaak.net
 
 **Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV**  
-[VOLLER NAME], Anschrift wie oben.
+Dirk Rühaak  
+c/o Werneburg Internet Marketing und Publikations-Service  
+Philipp-Kühner-Straße 2  
+99817 Eisenach

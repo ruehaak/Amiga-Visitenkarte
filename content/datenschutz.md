@@ -27,4 +27,6 @@ Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der
 Verarbeitung Ihrer Daten sowie ein Beschwerderecht bei einer Aufsichtsbehörde.
 
 **Verantwortlich**  
-[VOLLER NAME], [E-MAIL-ADRESSE]
+Dirk Rühaak, c/o Werneburg Internet Marketing und Publikations-Service,  
+Philipp-Kühner-Straße 2, 99817 Eisenach  
+E-Mail: info@dirk-ruehaak.net
