@@ -1,0 +1,33 @@
+{{ define "main" }}
+  {{/* ASCII-Banner. Ersetzbar – z. B. via patorjk.com/software/taag (figlet). */}}
+  <pre class="ascii" aria-hidden="true">
+ #####   ####   #####   #   #
+ #    # #    #  #    #  #  #
+ #    # #    #  #####   ###
+ #    # #    #  #  #    #  #
+ #####   ####   #   #   #   #
+  </pre>
+
+  {{/* Das Skript tippt die Profil-Session hier hinein.
+       Die Inhalte kommen aus den data-Attributen (Quelle: hugo.toml). */}}
+  <div id="cli" class="cli" role="log" aria-live="polite" aria-label="Profil"
+       data-name="{{ site.Params.name }}"
+       data-role="{{ site.Params.role }}"
+       data-location="{{ site.Params.location }}"
+       data-interests="{{ delimit site.Params.interests "|" }}"
+       data-speed="{{ site.Params.typeSpeed }}"></div>
+
+  {{/* Ohne JavaScript bleibt alles lesbar. */}}
+  <noscript>
+    <div class="cli">
+      <p class="prompt">1&gt; TYPE profil.txt</p>
+      <p>Name  : {{ site.Params.name }}</p>
+      <p>Beruf : {{ site.Params.role }}</p>
+      <p>Ort   : {{ site.Params.location }}</p>
+      <p class="prompt">1&gt; LIST interessen/</p>
+      {{ range site.Params.interests }}<p>  {{ . }}</p>{{ end }}
+    </div>
+  </noscript>
+
+  <script src="{{ "js/cli.js" | relURL }}" defer></script>
+{{ end }}

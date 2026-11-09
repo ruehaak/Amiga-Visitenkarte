@@ -1,0 +1,91 @@
+/* Amiga Workbench 1.x – Farbwelt */
+:root {
+  --wb-blue:   #0055AA;
+  --wb-white:  #FFFFFF;
+  --wb-orange: #FF8A00;
+  --wb-black:  #000000;
+}
+
+/* Topaz-Webfont. Datei nach static/fonts/ legen (siehe static/fonts/README.md).
+   Fehlt sie, greift automatisch die Monospace-Ersatzschrift. */
+@font-face {
+  font-family: "Topaz";
+  src: url("../fonts/Topaz-a500.woff2") format("woff2");
+  font-display: swap;
+}
+
+* { box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--wb-blue);
+  color: var(--wb-white);
+  font-family: "Topaz", "Courier New", monospace;
+  font-size: clamp(14px, 2.6vw, 18px);
+  line-height: 1.4;
+  padding: env(safe-area-inset-top, 0) 1rem env(safe-area-inset-bottom, 0);
+}
+
+.screen {
+  flex: 1 0 auto;
+  width: 100%;
+  max-width: 70ch;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+}
+
+.ascii {
+  margin: 0 0 1.5rem;
+  color: var(--wb-orange);
+  font-family: inherit;
+  font-size: 0.8em;
+  line-height: 1.1;
+  white-space: pre;
+  overflow-x: auto;
+}
+
+.cli p { margin: 0.15rem 0; }
+
+.prompt { color: var(--wb-orange); }
+
+/* Blinkender Block-Cursor am Ende der Session */
+.cursor {
+  display: inline-block;
+  width: 0.6em;
+  height: 1.05em;
+  background: var(--wb-white);
+  vertical-align: text-bottom;
+  animation: blink 1s step-end infinite;
+}
+@keyframes blink { 50% { opacity: 0; } }
+
+a { color: var(--wb-orange); }
+a:focus-visible { outline: 2px solid var(--wb-white); outline-offset: 2px; }
+
+.footer {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 70ch;
+  margin: 2rem auto 0;
+  padding-top: 1rem;
+  border-top: 2px solid var(--wb-white);
+  font-size: 0.85em;
+}
+
+.doc { max-width: 70ch; }
+.doc h1 {
+  margin: 0.5rem 0 1rem;
+  color: var(--wb-orange);
+  font-size: 1.2em;
+  font-weight: normal;
+}
+.doc p { margin: 0.5rem 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  .cursor { animation: none; }
+}

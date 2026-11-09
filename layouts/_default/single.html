@@ -1,0 +1,8 @@
+{{ define "main" }}
+  <article class="doc">
+    <p class="prompt">1&gt; TYPE {{ .File.ContentBaseName }}.txt</p>
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+    <p class="prompt"><a href="{{ "/" | relURL }}">1&gt; CD /</a></p>
+  </article>
+{{ end }}

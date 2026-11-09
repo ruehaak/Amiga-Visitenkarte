@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>{{ if .IsHome }}{{ site.Params.name }}{{ else }}{{ .Title }} · {{ site.Params.name }}{{ end }}</title>
+  <meta name="description" content="Persönliche Visitenkarte von {{ site.Params.name }}.">
+  <link rel="stylesheet" href="{{ "css/amiga.css" | relURL }}">
+</head>
+<body>
+  <main class="screen">
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  <footer class="footer">
+    <a href="{{ "/impressum/" | relURL }}">Impressum</a>
+    <span aria-hidden="true"> | </span>
+    <a href="{{ "/datenschutz/" | relURL }}">Datenschutz</a>
+  </footer>
+</body>
+</html>
