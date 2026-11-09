@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>{{ if .IsHome }}{{ site.Params.name }}{{ else }}{{ .Title }} · {{ site.Params.name }}{{ end }}</title>
   <meta name="description" content="Persönliche Visitenkarte von {{ site.Params.name }}.">
+  <link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | relURL }}">
   <link rel="stylesheet" href="{{ "css/amiga.css" | relURL }}">
 </head>
 <body>
