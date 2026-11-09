@@ -1,5 +1,5 @@
 ---
-title: "Dörk"
+title: "Dirk Rühaak"
 ---
 
 <!-- Der sichtbare Inhalt der Startseite stammt aus hugo.toml ([params])

@@ -2,24 +2,25 @@
 # Minimal gehalten: kein Theme, eigene Layouts in /layouts.
 
 baseURL = "https://example.com/"
-title = "Dörk"
+title = "Dirk Rühaak"
 defaultContentLanguage = "de"
 enableRobotsTXT = true
 
 [params]
   # --- Diese Werte erscheinen auf der Startseite. Nur hier anpassen. ---
-  name     = "Dörk"
-  role     = "Agile Digital Innovator"
+  name     = "Dirk Rühaak"
+  domain   = "Agile Digital Innovation"
   # Augenzwinkernde CLI-Zeile nach dem Profil. Leer lassen = keine Zeile.
   tagline  = "run transformation --agile --creative"
-  location = "München"
+  location = "München"   # "Where"
 
-  # Interessen für die "LIST interessen/"-Ausgabe. Frei kürzen/ergänzen.
-  interests = [
-    "Retrocomputing & Amiga",
-    "Experimentelle & Ambient-Musik",
-    "Literatur & Philosophie",
-    "Agile Produktentwicklung",
+  # Greater scope für die "LIST greater_scope/"-Ausgabe. Frei kürzen/ergänzen.
+  scope = [
+    "Cats",
+    "Nick Cave",
+    "FoodHub München",
+    "Literature",
+    "Theories etc.",
   ]
 
   # Tipp-Geschwindigkeit in Millisekunden pro Zeichen. 0 = Animation aus.

@@ -10,10 +10,10 @@
   var d = el.dataset;
   var data = {
     name: d.name || "",
-    role: d.role || "",
+    domain: d.domain || "",
     location: d.location || "",
     tagline: d.tagline || "",
-    interests: (d.interests || "").split("|").filter(Boolean)
+    scope: (d.scope || "").split("|").filter(Boolean)
   };
 
   var parsed = parseInt(d.speed, 10);
@@ -26,12 +26,12 @@
   var lines = [
     { kind: "type", text: "TYPE profil.txt" },
     { kind: "out",  text: "Name  : " + data.name },
-    { kind: "out",  text: "Beruf : " + data.role },
-    { kind: "out",  text: "Ort   : " + data.location }
+    { kind: "out",  text: "Domain: " + data.domain },
+    { kind: "out",  text: "Where : " + data.location }
   ];
   if (data.tagline) lines.push({ kind: "type", text: data.tagline });
-  lines.push({ kind: "type", text: "LIST interessen/" });
-  data.interests.forEach(function (item) {
+  lines.push({ kind: "type", text: "LIST greater_scope/" });
+  data.scope.forEach(function (item) {
     lines.push({ kind: "out", text: "  " + item });
   });
 

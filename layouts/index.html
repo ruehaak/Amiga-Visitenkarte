@@ -1,22 +1,28 @@
 {{ define "main" }}
-  {{/* ASCII-Banner. Ersetzbar (figlet "standard", Ö per Hand) – z. B. via patorjk.com/software/taag (figlet). */}}
+  {{/* ASCII-Banner (figlet "standard", Ü per Hand). Ersetzbar – z. B. via patorjk.com/software/taag. */}}
   <pre class="ascii" aria-hidden="true">
-        " "
- ____   ___  ____  _  __
-|  _ \ / _ \|  _ \| |/ /
-| | | | | | | |_) | ' /
-| |_| | |_| |  _ <| . \
-|____/ \___/|_| \_\_|\_\
+ ____   ___  ____   _  __
+|  _ \ |_ _||  _ \ | |/ /
+| | | | | | | |_) || ' /
+| |_| | | | |  _ < | . \
+|____/ |___||_| \_\|_|\_\
+
+        "   "
+ ____   _   _  _   _     _        _     _  __
+|  _ \ | | | || | | |   / \      / \   | |/ /
+| |_) || | | || |_| |  / _ \    / _ \  | ' /
+|  _ < | |_| ||  _  | / ___ \  / ___ \ | . \
+|_| \_\ \___/ |_| |_|/_/   \_\/_/   \_\|_|\_\
   </pre>
 
   {{/* Das Skript tippt die Profil-Session hier hinein.
        Die Inhalte kommen aus den data-Attributen (Quelle: hugo.toml). */}}
   <div id="cli" class="cli" role="log" aria-live="polite" aria-label="Profil"
        data-name="{{ site.Params.name }}"
-       data-role="{{ site.Params.role }}"
+       data-domain="{{ site.Params.domain }}"
        data-location="{{ site.Params.location }}"
        data-tagline="{{ site.Params.tagline }}"
-       data-interests="{{ delimit site.Params.interests "|" }}"
+       data-scope="{{ delimit site.Params.scope "|" }}"
        data-speed="{{ site.Params.typeSpeed }}"></div>
 
   {{/* Ohne JavaScript bleibt alles lesbar. */}}
@@ -24,11 +30,11 @@
     <div class="cli">
       <p class="prompt">1&gt; TYPE profil.txt</p>
       <p>Name  : {{ site.Params.name }}</p>
-      <p>Beruf : {{ site.Params.role }}</p>
-      <p>Ort   : {{ site.Params.location }}</p>
+      <p>Domain: {{ site.Params.domain }}</p>
+      <p>Where : {{ site.Params.location }}</p>
       {{ with site.Params.tagline }}<p class="prompt">1&gt; {{ . }}</p>{{ end }}
-      <p class="prompt">1&gt; LIST interessen/</p>
-      {{ range site.Params.interests }}<p>  {{ . }}</p>{{ end }}
+      <p class="prompt">1&gt; LIST greater_scope/</p>
+      {{ range site.Params.scope }}<p>  {{ . }}</p>{{ end }}
     </div>
   </noscript>
 
